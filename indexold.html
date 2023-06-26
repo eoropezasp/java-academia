@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--etiqueta semántica: html5-->
+
+<body>
+    <header>
+        <h1>Mundial Qatar - 2022</h1>
+    </header>
+    <nav>
+        <!--lista no ordenada-->
+        <ul>
+            <li>
+                <a href="#equipos">Equipos</a>
+            </li>
+            <li>
+                <a href="#grupos">Grupos</a>
+            </li>
+        </ul>
+    </nav>
+    <!--contenido ppal-->
+    <main>
+        <section>
+            <h3>Equipos </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellendus similique corrupti iure sed
+                excepturi ullam nostrum illum beatae vero! Eos labore ipsam nam rerum a reiciendis quia sunt?
+                Reiciendis.</p>
+        </section>
+        <section>
+            <h3>Grupos </h3>
+            <table>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!--formularios-->
+    <!-- los datos viajan por GET por defecto -->
+    <fieldset>
+        <legend>datos de contacto</legend>
+        <form method="get">
+            <!-- input varios tipo -->
+            <div>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="nombre" required>
+            </div>
+
+
+            <div>
+                <label for="apodo">Apodo:</label>
+                <input id="apodo" type="text" name="apodo" value="apodo" readonly>
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="edad">Edad</label>
+                <input id="edad" type="number" name="edad" required min="0" max="99" placeholder="11-">
+            </div>
+            <!-- number -->
+
+            <div>
+                <label for="">Obra social</label>
+                <select name="obraSocial" id="" required>
+                    <option value="" selected></option>
+                    <option value="PAM">pami</option>
+                    <option value="OSDE">osde</option>
+                    <option value="SWMED">swish medical</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label>Es cliente</label>
+                <label for="si">Si</label>
+                <input type="radio" name="escliente" id="si" checked>
+
+                <label for="no">No</label>
+                <input type="radio" name="escliente" id="no">
+            </div>
+
+            <div>
+                <label>intereses</label>
+                <input type="checkbox" name="musica" id="musica" value="MUS">
+                <label for="musica">Musica</label>
+                <input type="checkbox" name="deportes" id="deportes" value="DEP">
+                <label for="deportes">deportes</label>
+
+            </div>
+
+            <div>
+                <table>Feche de Nac:</table>
+                <input type="date">
+            </div>
+
+            <div>
+                <table>Horario:</table>
+                <input type="time">
+            </div>
+
+            <div>
+                <label for="">Avatar</label>
+                <input type="file">
+            </div>
+
+            <div>
+                <button>
+                    Enviar
+                </button>
+            </div>
+
+            <input type="hidden" name="oculto" id="oculto">
+
+
+        </form>
+    </fieldset>
+
+    <aside>
+
+        <!-- <iframe src="./html/publicidad.html" frameborder="0" width="200" height="200">er</iframe> -->
+
+        <!-- video externo -->
+        <iframe width="200" height="315" 
+        src="https://www.youtube.com/embed/hIaf_PaQ-rc" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+
+        <!-- videos -->
+        <video src="./assets/movie.mp4" controls></video>
+
+        <audio src="./assets/horse.ogv" controls></audio>
+
+
+    </aside>
+    <footer>
+        <a href="./index.html">Volver</a>
+    </footer>
+</body>
+
+</html>
